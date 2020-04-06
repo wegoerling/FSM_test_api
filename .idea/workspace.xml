@@ -1,30 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1935eda-6687-4e4e-8262-104a47d80539" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="wegoerling &lt;11wgoerling@gmail.com&gt;" />
         <option value="walter_goerling" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aBDlS5NjKYfBaTxmIMr7B9qdPq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test_flask" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1935eda-6687-4e4e-8262-104a47d80539" name="Default Changelist" comment="" />
+      <created>1586200243538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586200243538</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1586200468556</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586200468556</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586200310662">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586200310662" />
-    <state x="424" y="9" key="CommitChangelistDialog2" timestamp="1586200389487">
+    <state x="205" y="14" key="CommitChangelistDialog2" timestamp="1586200467878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="9" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586200389487" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1586200288620">
+    <state x="205" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586200467878" />
+    <state x="168" y="120" width="1200" height="584" key="DiffContextDialog" timestamp="1586201658207">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586200288620" />
+    <state x="168" y="120" width="1200" height="584" key="DiffContextDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586201658207" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1586201033692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586201033692" />
+    <state x="639" y="306" key="Github.ShareDialog" timestamp="1586200896832">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="639" y="306" key="Github.ShareDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586200896832" />
+    <state x="562" y="204" key="git4idea.merge.GitPullDialog" timestamp="1586200702685">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="562" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586200702685" />
   </component>
 </project>
