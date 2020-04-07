@@ -3,15 +3,16 @@ import os
 from flask import Flask, request, jsonify
 from flask_marshmallow import Marshmallow
 from flask_sqlalchemy import SQLAlchemy
+from config import Config, Configdb
 
-class Config(object):
-    SECRET_KEY = os.environ.get('SECRET_KEY')
-    DEBUG = True
-    CSRF_ENABLED = True
 
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir,'curd.sqlite')
+
+
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir,'curd.sqlite')
+app.config.from_object(Config)
+app.config.from_object(Configdb)
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
