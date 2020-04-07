@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a1935eda-6687-4e4e-8262-104a47d80539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586282663458</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit 6: Tested authorization code with the main page ('/')">
+      <created>1586283381354</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586283381354</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,7 +155,8 @@
     <MESSAGE value="Third Commit" />
     <MESSAGE value="Fourth Commit" />
     <MESSAGE value="Commit 5:Added basic error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 5:Added basic error handling" />
+    <MESSAGE value="Commit 6: Tested authorization code with the main page ('/')" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 6: Tested authorization code with the main page ('/')" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586202753766">
@@ -160,10 +167,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="525" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586269459540" />
-    <state x="205" y="14" key="CommitChangelistDialog2" timestamp="1586282662714">
+    <state x="205" y="14" key="CommitChangelistDialog2" timestamp="1586283380690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="205" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586282662714" />
+    <state x="205" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586283380690" />
     <state x="168" y="120" width="1200" height="584" key="DiffContextDialog" timestamp="1586201796615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -192,10 +199,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1364" height="195" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586202354129" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586282665235">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586283383352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586282665235" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586283383352" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1586274830671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
