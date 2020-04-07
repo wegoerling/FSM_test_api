@@ -4,10 +4,24 @@ from flask import Flask, request, jsonify
 from flask_marshmallow import Marshmallow
 from flask_sqlalchemy import SQLAlchemy
 from config import Config, Configdb
+from flask_httpauth import HTTPBasicAuth
+from werkzeug.security import generate_password_hash, check_password_hash
 
 # Define Flask app and base directory
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
+auth = HTTPBasicAuth()
+
+# @auth user generation
+users = {
+    "gudjon": generate_password_hash("hello"),
+    "walter": generate_password_hash("bye")
+}
+@auth.verify_password
+def verify_password(username, password):
+    if username in users:
+        return check_password_hash(users.get(username), password)
+    return False
 
 # establish configuration and primary objects
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir,'curd.sqlite')
@@ -35,8 +49,9 @@ kits_schema = KitSchema(many=True)
 
 # Main page
 @app.route('/')
+@auth.login_required
 def hello_world():
-    return 'Hello, Fraunhofer!'
+    return 'Hello, %s!' % auth.username()
 
 # Add an entry to the table using HTTP POST
 @app.route("/kit", methods=["POST"])

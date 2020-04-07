@@ -4,7 +4,6 @@
     <list default="true" id="a1935eda-6687-4e4e-8262-104a47d80539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_flask.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_flask.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586271578722</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit 5:Added basic error handling">
+      <created>1586282663458</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586282663458</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,7 +148,8 @@
     <MESSAGE value="Second Commit" />
     <MESSAGE value="Third Commit" />
     <MESSAGE value="Fourth Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fourth Commit" />
+    <MESSAGE value="Commit 5:Added basic error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 5:Added basic error handling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586202753766">
@@ -153,10 +160,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="525" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586269459540" />
-    <state x="205" y="14" key="CommitChangelistDialog2" timestamp="1586271577886">
+    <state x="205" y="14" key="CommitChangelistDialog2" timestamp="1586282662714">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="205" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586271577886" />
+    <state x="205" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586282662714" />
     <state x="168" y="120" width="1200" height="584" key="DiffContextDialog" timestamp="1586201796615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -185,10 +192,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1364" height="195" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586202354129" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586271581690">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586282665235">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586271581690" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586282665235" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1586274830671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
