@@ -1,27 +1,45 @@
 import os
 
-from flask import Flask, request, jsonify
-from flask_marshmallow import Marshmallow
+from flask import Flask, request, jsonify, g
 from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
 from config import Config, Configdb
-from flask_httpauth import HTTPBasicAuth
-from werkzeug.security import generate_password_hash, check_password_hash
+from flask_jwt import JWT
+from werkzeug.security import safe_str_cmp
 
-# Define Flask app and base directory
+
+# user generation
+class User(object):
+    def __init__(self, id, username, password):
+        self.id = id
+        self.username = username
+        self.password = password
+
+    def __str__(self):
+        return "User(id='%s')" % self.id
+
+users = [
+    User(1, 'user1', 'abcxyz'),
+    User(2, 'user2', 'abcxyz'),
+]
+
+username_table = {u.username: u for u in users}
+userid_table = {u.id: u for u in users}
+
+def authenticate(username, password):
+    user = username_table.get(username, None)
+    if user and safe_str_cmp(user.password.encode('utf-8'), password.encode('utf-8')):
+        return user
+
+def identity(payload):
+    user_id = payload['identity']
+    return userid_table.get(user_id, None)
+
+# Define Flask app, base directory, and security
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
-auth = HTTPBasicAuth()
-
-# @auth user generation
-users = {
-    "gudjon": generate_password_hash("hello"),
-    "walter": generate_password_hash("bye")
-}
-@auth.verify_password
-def verify_password(username, password):
-    if username in users:
-        return check_password_hash(users.get(username), password)
-    return False
+app.secret_key = "walter"  # Make this long, random, and secret in a real app!
+jwt = JWT(app, authenticate, identity)
 
 # establish configuration and primary objects
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir,'curd.sqlite')
@@ -49,9 +67,13 @@ kits_schema = KitSchema(many=True)
 
 # Main page
 @app.route('/')
-@auth.login_required
-def hello_world():
-    return 'Hello, %s!' % auth.username()
+def index():
+    return "Hello, log in for more content!"
+
+@app.route('/protected')
+@jwt_required()
+def protected():
+    return '%s' % current_identity
 
 # Add an entry to the table using HTTP POST
 @app.route("/kit", methods=["POST"])
