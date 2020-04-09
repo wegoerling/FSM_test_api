@@ -1,26 +1,28 @@
 import os
 
-from flask import Flask, request, jsonify, g
+from flask import Flask, session, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
+from werkzeug.security import safe_str_cmp
 from config import Config, Configdb
 from flask_jwt import JWT
-from werkzeug.security import safe_str_cmp
+from .permissions import UserPermission, Permission
 
 
 # user generation
 class User(object):
-    def __init__(self, id, username, password):
+    def __init__(self, id, username, password, rank):
         self.id = id
         self.username = username
         self.password = password
+        self.rank = 'admin'
 
     def __str__(self):
         return "User(id='%s')" % self.id
 
 users = [
-    User(1, 'user1', 'abcxyz'),
-    User(2, 'user2', 'abcxyz'),
+    User(1, 'walter', 'abcxyz', 'admin'),
+    User(2, 'gudjon', 'abcxyz', 'admin'),
 ]
 
 username_table = {u.username: u for u in users}
@@ -73,7 +75,20 @@ def index():
 @app.route('/protected')
 @jwt_required()
 def protected():
+    session.user_id=current_identity
     return '%s' % current_identity
+
+@app.route('/settings')
+@UserPermission()
+def settings():
+    """User settings page, only accessable for sign-in user."""
+    return render_template('settings.html')
+
+@app.route('/settings/master')
+@AdminOnly(users.current_identity.rank)
+def settings():
+    """User settings page, only accessable for sign-in user."""
+    return render_template('settingsmaster.html')
 
 # Add an entry to the table using HTTP POST
 @app.route("/kit", methods=["POST"])
