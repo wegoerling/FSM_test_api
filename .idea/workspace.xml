@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1935eda-6687-4e4e-8262-104a47d80539" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FSM_test_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FSM_test_api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_flask.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_flask.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,14 +39,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test_flask" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FSM_test_api" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -133,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586283381354</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit 6: Tested authorization code with the main page ('/')">
+      <created>1586289029216</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586289029216</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,13 +159,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
@@ -159,26 +176,28 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit 6: Tested authorization code with the main page ('/')" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586202753766">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="266" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586442845886">
+      <screen x="67" y="27" width="1373" height="873" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586202753766" />
+    <state x="266" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1373.873@67.27.1373.873" timestamp="1586442845886" />
     <state x="525" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586269459540">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="525" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586269459540" />
-    <state x="205" y="14" key="CommitChangelistDialog2" timestamp="1586283380690">
+    <state x="205" y="14" key="CommitChangelistDialog2" timestamp="1586289028598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="205" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586283380690" />
+    <state x="205" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586289028598" />
     <state x="168" y="120" width="1200" height="584" key="DiffContextDialog" timestamp="1586201796615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="168" y="120" width="1200" height="584" key="DiffContextDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586201796615" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1586201033692">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="558" y="190" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586531506331">
+      <screen x="67" y="27" width="1373" height="873" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586201033692" />
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586378489201" />
+    <state x="558" y="190" width="424" height="484" key="FileChooserDialogImpl/67.27.1373.873@67.27.1373.873" timestamp="1586531506331" />
     <state x="639" y="306" key="Github.ShareDialog" timestamp="1586200896832">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -199,10 +218,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1364" height="195" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586202354129" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586283383352">
+    <state x="337" y="126" key="SettingsEditor" timestamp="1586443589735">
+      <screen x="67" y="27" width="1373" height="873" />
+    </state>
+    <state x="337" y="126" key="SettingsEditor/67.27.1373.873@67.27.1373.873" timestamp="1586443589735" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586289031605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586283383352" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586289031605" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1586274830671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
