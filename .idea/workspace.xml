@@ -27,7 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a1935eda-6687-4e4e-8262-104a47d80539" name="Default Changelist" comment="Commit 6: Tested authorization code with the main page ('/')">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +203,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586544363329</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Commit 7:Dockerize the application">
+      <created>1586547270825</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586547270825</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Commit 7:Dockerize the application">
+      <created>1586547605351</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1586547605351</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,11 +309,11 @@
       <screen x="67" y="27" width="1373" height="873" />
     </state>
     <state x="337" y="126" key="SettingsEditor/67.27.1373.873@67.27.1373.873" timestamp="1586443589735" />
-    <state x="390" y="181" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1586544370080">
+    <state x="390" y="181" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1586547607353">
       <screen x="67" y="27" width="1373" height="873" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586289031605" />
-    <state x="390" y="181" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1373.873@67.27.1373.873" timestamp="1586544370080" />
+    <state x="390" y="181" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1373.873@67.27.1373.873" timestamp="1586547607353" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1586274830671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

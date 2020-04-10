@@ -10,7 +10,8 @@ COPY ./requirements.txt /app/requirements.txt
 
 WORKDIR /app
 
-RUN pip install -r requirements.txt && \
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt && \
     set $FLASK_APP=app.py && \
     set $FLASK_ENV=development
 
