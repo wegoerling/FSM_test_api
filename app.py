@@ -8,7 +8,7 @@ from flask_marshmallow import Marshmallow
 from flask_jwt import JWT, current_identity, jwt_required
 from werkzeug.security import safe_str_cmp
 from config import Config, Configdb
-from permissions import UserPermission
+from permissions import UserPermission, AdminOnly
 
 
 # user generation
@@ -80,7 +80,7 @@ def index():
 @app.route('/protected')
 @jwt_required()
 def protected():
-    session.user_id=current_identity
+    session.user_id = current_identity
     return '%s' % current_identity
 
 @app.route('/settings2')
@@ -90,7 +90,7 @@ def settings():
     return jsonify('settings.html')
 
 @app.route('/settingsmaster')
-# @AdminOnly()
+@AdminOnly()
 def settingsmaster():
     """User settings page, only accessable for sign-in user."""
     return jsonify('settingsmaster.html')

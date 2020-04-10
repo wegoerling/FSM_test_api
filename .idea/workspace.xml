@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1935eda-6687-4e4e-8262-104a47d80539" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FSM_test_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FSM_test_api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a1935eda-6687-4e4e-8262-104a47d80539" name="Default Changelist" comment="Commit 6: Tested authorization code with the main page ('/')">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_flask.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_flask.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +66,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FSM_test_api" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FSM_test_api" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,8 +88,23 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="" />
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
@@ -151,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586289029216</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit 6: Tested authorization code with the main page ('/')">
+      <created>1586532131298</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586532131298</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Commit 6: Tested authorization code with the main page ('/')">
+      <created>1586532231886</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586532231886</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +205,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -176,6 +234,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit 6: Tested authorization code with the main page ('/')" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="410" y="27" width="666" height="873" key="#Dockerfile" timestamp="1586542754260">
+      <screen x="67" y="27" width="1373" height="873" />
+    </state>
+    <state x="410" y="27" width="666" height="873" key="#Dockerfile/67.27.1373.873@67.27.1373.873" timestamp="1586542754260" />
     <state x="266" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586442845886">
       <screen x="67" y="27" width="1373" height="873" />
     </state>
@@ -218,14 +280,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1364" height="195" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586202354129" />
+    <state x="629" y="331" width="476" height="264" key="MultipleFileMergeDialog" timestamp="1586532294316">
+      <screen x="67" y="27" width="1373" height="873" />
+    </state>
+    <state x="629" y="331" width="476" height="264" key="MultipleFileMergeDialog/67.27.1373.873@67.27.1373.873" timestamp="1586532294316" />
     <state x="337" y="126" key="SettingsEditor" timestamp="1586443589735">
       <screen x="67" y="27" width="1373" height="873" />
     </state>
     <state x="337" y="126" key="SettingsEditor/67.27.1373.873@67.27.1373.873" timestamp="1586443589735" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586289031605">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="390" y="181" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1586532274213">
+      <screen x="67" y="27" width="1373" height="873" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586289031605" />
+    <state x="390" y="181" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1373.873@67.27.1373.873" timestamp="1586532274213" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1586274830671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
