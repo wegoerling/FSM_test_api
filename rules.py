@@ -1,5 +1,8 @@
+from os import abort
+
 from flask import session, flash, redirect, url_for
 from permission import Rule
+from app import User
 
 
 class UserRule(Rule):
@@ -12,12 +15,15 @@ class UserRule(Rule):
         flash('Sign in first.')
         return redirect(url_for('signin'))
 
-class AdminOnly(Rule):
-    def check(self, rank):
-        if rank is 'Admin':
-            return 'user_id' in session
-        return self.deny()
+
+class AdminRule(Rule):
+    def base(self):
+        return UserRule()
+
+    def check(self):
+        user_id = int(session['user_id'])
+        user = User.query.filter(User.id == user_id).first()
+        return user and user.is_admin
 
     def deny(self):
-        flash('Admins only.')
-        return redirect(url_for('signin'))
+        abort(403)

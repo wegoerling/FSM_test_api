@@ -1,13 +1,14 @@
 from permission import Permission
-from rules import UserRule, AdminOnly
+from rules import UserRule, AdminRule
 
 
 class UserPermission(Permission):
-#    """Only signin user has this permission."""
+    #    """Only signin user has this permission."""
     def rule(self):
         return UserRule()
 
+
 class AdminPermission(Permission):
-#    """Only signin user has this permission."""
+    #    """Only admin user has this permission."""
     def rule(self):
-        return AdminOnly()
+        return AdminRule()
