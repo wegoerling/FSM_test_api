@@ -16,18 +16,19 @@ from rules import AdminOnly
 
 
 class User(object):
-    def __init__(self, id, username, password, rank):
+    def __init__(self, id, username, password):
         self.id = id
         self.username = username
         self.password = password
-        self.rank = 'admin'
+        # self.rank = 'admin'
 
     def __str__(self):
         return "User(id='%s')" % self.id
 
+
 users = [
-    User(1, 'walter', 'abcxyz', 'admin'),
-    User(2, 'gudjon', 'abcxyz', 'admin'),
+    User(1, 'walter', 'abcxyz'),
+    User(2, 'gudjon', 'abcxyz'),
 ]
 
 username_table = {u.username: u for u in users}
@@ -52,6 +53,7 @@ jwt = JWT(app, authenticate, identity)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir,'curd.sqlite')
 app.config.from_object(Config)
 app.config.from_object(Configdb)
+app.debug = True
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
@@ -73,7 +75,7 @@ kit_schema = KitSchema()
 kits_schema = KitSchema(many=True)
 
 # Main page
-@app.route('/')
+@app.route('/home')
 def index():
     return "Hello, log in for more content!"
 
@@ -86,13 +88,13 @@ def protected():
 @app.route('/settings2')
 @UserPermission()
 def settings():
-    """User settings page, only accessable for sign-in user."""
+    """User settings page, only accessible for sign-in user."""
     return jsonify('settings.html')
 
 @app.route('/settingsmaster')
 @AdminPermission()
 def settingsmaster():
-    """User settings page, only accessable for sign-in user."""
+    """User settings page, only accessible for sign-in user."""
     return jsonify('settingsmaster.html')
 
 # Add an entry to the table using HTTP POST
